@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import CopyButton from "./CopyButton";
 
 const roles = [
   {
@@ -277,10 +278,13 @@ const RolePromptsSection = () => {
                       <div
                         className={`overflow-hidden transition-all duration-500 ${
                           expandedPrompt === `${category}-${index}`
-                            ? "max-h-[500px] opacity-100 mt-4"
+                            ? "max-h-[600px] opacity-100 mt-4"
                             : "max-h-0 opacity-0"
                         }`}
                       >
+                        <div className="flex justify-end mb-2">
+                          <CopyButton textToCopy={item.prompt} />
+                        </div>
                         <div className="prompt-box">{item.prompt}</div>
                       </div>
                     </div>

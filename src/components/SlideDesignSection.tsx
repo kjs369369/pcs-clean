@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CopyButton from "./CopyButton";
 
 const slideStyles = [
   {
@@ -90,12 +91,16 @@ const SlideDesignSection = () => {
 
               <div className={`overflow-hidden transition-all duration-500 ${activeCard === style.id ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
                 <div className="pt-4 border-t border-border">
-                  <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wider">NotebookLM 프롬프트:</p>
+                  <div className="flex items-center justify-between mb-2">
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider">NotebookLM 프롬프트:</p>
+                    <CopyButton textToCopy={style.prompt} />
+                  </div>
                   <div className={style.color === "primary" ? "prompt-box" : "prompt-box-blue"}>
                     {style.prompt}
                   </div>
-                  <div className="mt-4 p-3 bg-muted/30 rounded-lg">
-                    <p className="text-xs text-muted-foreground">{style.followUp}</p>
+                  <div className="mt-4 p-3 bg-muted/30 rounded-lg flex items-center justify-between">
+                    <p className="text-xs text-muted-foreground flex-1">{style.followUp}</p>
+                    <CopyButton textToCopy={style.followUp} className="ml-2" />
                   </div>
                 </div>
               </div>
