@@ -1,4 +1,7 @@
 import { useEffect, useState, useRef } from "react";
+import { SplineScene } from "@/components/ui/spline-scene";
+import { Card } from "@/components/ui/card";
+import { Spotlight } from "@/components/ui/spotlight";
 
 interface Particle {
   x: number;
@@ -143,6 +146,18 @@ const HeroSection = () => {
         style={{ background: 'transparent' }}
       />
 
+      {/* Spline 3D Card */}
+      <Card className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-card/50 backdrop-blur-sm border-border/50 overflow-hidden hidden lg:block z-20">
+        <Spotlight
+          className="from-primary/30 via-primary/20 to-transparent"
+          size={300}
+        />
+        <SplineScene 
+          scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+          className="w-full h-full"
+        />
+      </Card>
+
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 text-[14vw] font-display text-stroke opacity-10 animate-float">
@@ -156,7 +171,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 text-center max-w-5xl mx-auto">
+      <div className="relative z-10 text-center max-w-5xl mx-auto lg:mr-[450px]">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <p className="tag-red mb-4 animate-pulse-glow text-xs">AI강사사관학교</p>
         </div>
