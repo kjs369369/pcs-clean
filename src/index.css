@@ -70,8 +70,15 @@
     line-height: 0.9;
   }
 
+  .kinetic-title-sm {
+    @apply text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter;
+    font-family: 'Black Han Sans', sans-serif;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+
   .kinetic-subtitle {
-    @apply text-2xl md:text-4xl font-bold tracking-tight;
+    @apply text-xl md:text-3xl font-bold tracking-tight;
     font-family: 'Black Han Sans', sans-serif;
   }
 
