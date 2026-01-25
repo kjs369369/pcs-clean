@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CopyButton from "./CopyButton";
 
 const infographicStyles = [
   {
@@ -90,13 +91,19 @@ const InfographicSection = () => {
                 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wider">한국어 프롬프트:</p>
+                    <div className="flex items-center justify-between mb-2">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wider">한국어 프롬프트:</p>
+                      <CopyButton textToCopy={style.promptKr} />
+                    </div>
                     <div className="prompt-box-blue">
                       {style.promptKr}
                     </div>
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wider">English Prompt:</p>
+                    <div className="flex items-center justify-between mb-2">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wider">English Prompt:</p>
+                      <CopyButton textToCopy={style.promptEn} />
+                    </div>
                     <div className="prompt-box-blue">
                       {style.promptEn}
                     </div>
