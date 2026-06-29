@@ -31,7 +31,7 @@ const Footer = () => {
             <h4 className="font-bold mb-4 uppercase tracking-wider text-sm">Info</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>강사: AI강사사관학교 지도교수 김진수</li>
-              <li>작성자: AICLab 김진수</li>
+              <li>작성자: 김진수</li>
             </ul>
           </div>
         </div>
@@ -39,9 +39,11 @@ const Footer = () => {
         <div className="section-divider mb-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            © 2024 AICLab. All rights reserved.
-          </p>
+          <div className="text-sm text-muted-foreground text-center md:text-left">
+            <p>© 2026 김진수 (Kim Jin-soo). All Rights Reserved.</p>
+            <p className="text-xs mt-1 opacity-80">무단 전재·복제·배포를 금합니다 · All content is protected.</p>
+            <p className="text-xs mt-1 opacity-60">정리본 2026-06-21</p>
+          </div>
           <div className="flex items-center gap-4">
             <span className="tag-red">AI강사사관학교</span>
             <span className="tag-blue">실전프롬프트</span>

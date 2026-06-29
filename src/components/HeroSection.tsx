@@ -174,7 +174,7 @@ const HeroSection = () => {
             강사 : <span className="text-foreground font-bold">AI강사사관학교 지도교수 김진수</span>
           </p>
           <p className="text-xs text-muted-foreground">
-            작성자 : AICLab 김진수
+            작성자 : 김진수
           </p>
         </div>
 
