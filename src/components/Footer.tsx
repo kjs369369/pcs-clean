@@ -30,7 +30,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4 uppercase tracking-wider text-sm">Info</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>강사: AI강사사관학교 지도교수 김진수</li>
+              <li>강사: 김진수</li>
               <li>작성자: 김진수</li>
             </ul>
           </div>
@@ -45,7 +45,6 @@ const Footer = () => {
             <p className="text-xs mt-1 opacity-60">정리본 2026-06-21</p>
           </div>
           <div className="flex items-center gap-4">
-            <span className="tag-red">AI강사사관학교</span>
             <span className="tag-blue">실전프롬프트</span>
           </div>
         </div>

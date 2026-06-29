@@ -158,7 +158,6 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <p className="tag-red mb-4 animate-pulse-glow text-xs">AI강사사관학교</p>
         </div>
 
         <h1 className={`kinetic-title-sm mb-3 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -171,7 +170,7 @@ const HeroSection = () => {
 
         <div className={`mt-8 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <p className="text-base md:text-lg text-muted-foreground mb-1">
-            강사 : <span className="text-foreground font-bold">AI강사사관학교 지도교수 김진수</span>
+            강사 : <span className="text-foreground font-bold">김진수</span>
           </p>
           <p className="text-xs text-muted-foreground">
             작성자 : 김진수
